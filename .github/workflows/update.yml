@@ -1,0 +1,37 @@
+name: Update IPTV Playlist
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Каждые 10 минут
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Проверка кода
+        uses: actions/checkout@v2
+
+      - name: Установка Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Установка зависимостей
+        run: |  
+          pip install requests
+
+      - name: Запуск скрипта
+        run: |
+          python new.py
+
+      - name: Добавление изменений
+        run: |
+          git config --local user.name 'GitHub Action'
+          git config --local user.email 'action@github.com'
+          git add IPTV.m3u8
+          git commit -m 'Обновлён плейлист IPTV' || echo "Нет изменений для коммита"
+
+      - name: Отправка изменений
+        run: |
+          git push
