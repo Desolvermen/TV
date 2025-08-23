@@ -13,23 +13,10 @@ wanted_channels = [
     "ТНТ4 HD",
     "Пятница HD",
     "ТВ3 HD",
-    "Мир",
-    "Мир 24",
     "РБК",
     "Матч ТВ HD",
     "МузТВ"
 ]
-
-# Словарь для изменения названий каналов
-channel_rename = {
-    "ТНТ4 HD": "ТНТ-4 HD",
-    "Пятница HD": "Пятница! HD",
-    "ТВ3 HD": "ТВ-3 HD",
-    "Мир": "Мир HD",
-    "Мир 24": "Мир 24 HD",
-    "РБК": "РБК HD",
-    "МузТВ": "Муз ТВ HD"
-}
 
 # Загружаем плейлист
 response = requests.get(playlist_url)
@@ -55,14 +42,23 @@ for channel in wanted_channels:
         line = playlist_content[index]
         if "group-title=\"Rutube (VPN)\"" in line:
             channel_name = line.split(',')[1].strip() if len(line.split(',')) > 1 else ""
-            # Поменять название канала на новое, если оно есть в словаре
-            if channel in channel_rename:
-                channel_name = channel_rename[channel]
             
-            if channel_name == channel or channel_name in channel_rename.values():
-                filtered_lines.append(f'#EXTINF:-1,{channel_name}')  # Добавляем только имя канала
+            if channel_name == channel:
+                # Изменяем название канала в зависимости от условий
+                if channel_name == "ТНТ4 HD":
+                    channel_name = "ТНТ-4 HD"
+                elif channel_name == "Пятница HD":
+                    channel_name = "Пятница! HD"
+                elif channel_name == "ТВ3 HD":
+                    channel_name = "ТВ-3 HD"
+                elif channel_name == "РБК":
+                    channel_name = "РБК HD"
+                elif channel_name == "МузТВ":
+                    channel_name = "Муз ТВ HD"
+
+                filtered_lines.append(f'#EXTINF:-1,{channel_name}')  # Добавляем название канала
                 while index + 1 < len(playlist_content):
-                    index += 1  # Перемещаемся к следующей строке 
+                    index += 1  # Перемещаемся к следующей строке
                     next_line = playlist_content[index]
                     if not next_line.startswith("#"):
                         filtered_lines.append(next_line)  # Добавляем URL-адрес потока
@@ -72,8 +68,12 @@ for channel in wanted_channels:
                     # Добавляем канал Россия 1 HD после Первый канал HD
                     filtered_lines.append('#EXTINF:-1,Россия 1 HD')
                     filtered_lines.append('https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8')  
-                if channel == "ТВ3 HD":      
-                    # Добавляем статичный канал Звезда HD после ТВ3 HD
+                if channel == "ТНТ4 HD":
+                    # Добавляем статичное СТС HD после ТНТ4 HD
+                    filtered_lines.append('#EXTINF:-1,СТС HD')
+                    filtered_lines.append('http://03.stream.pg19.ru/tv/channel/110/index.m3u8?source=pgtv')
+                if channel == "ТВ3 HD":
+                    # Добавляем статичное Звезда HD после ТВ3 HD
                     filtered_lines.append('#EXTINF:-1,Звезда HD')
                     filtered_lines.append('http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8')
                     filtered_lines.append('#EXTINF:-1,Звезда Плюс HD')
