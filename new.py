@@ -19,7 +19,6 @@ wanted_channels = [
     "Мир 24",
     "РБК",
     "Матч ТВ HD",
-    "ТНТ Music",
     "МузТВ"
 ]
 
@@ -66,5 +65,6 @@ for channel in wanted_channels:
 with open(output_file, 'w', encoding='utf-8') as file:
     for line in filtered_lines:
         file.write(f"{line}\n")
+
 
 print(f'Отфильтрованный плейлист сохранён в: {output_file}')
