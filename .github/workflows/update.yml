@@ -33,7 +33,7 @@ jobs:
             git config --local user.name 'GitHub Action'
             git config --local user.email 'action@github.com'
             git add IPTV.m3u8
-            git commit -m 'Обновлён плейлист IPTV';
+            git commit -m '✅ Обновлён плейлист IPTV';
           else
             echo "Нет изменений для коммита";
           fi
