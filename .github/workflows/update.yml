@@ -1,4 +1,4 @@
-name: Update IPTV Playlist
+name: ✅ Update IPTV Playlist
 
 on:
   schedule:
@@ -9,25 +9,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Проверка кода
+      - name: ✅ Проверка кода
         uses: actions/checkout@v2
 
-      - name: Установка Python
+      - name: ✅ Установка Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
-      - name: Установка зависимостей
+      - name: ✅ Установка зависимостей
         run: |
           pip install -r requirements.txt
 
-      - name: Запуск скрипта и отображение времени
+      - name: ✅ Запуск скрипта и отображение времени
         run: |
           update_time=$(date -u -d '+3 hours' '+%d-%m-%Y %H:%M:%S')
           echo "Обновление выполнено: $update_time"
           python new.py
 
-      - name: Добавление изменений
+      - name: ✅ Добавление изменений
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config --local user.name 'GitHub Action'
@@ -38,6 +38,6 @@ jobs:
             echo "Нет изменений для коммита";
           fi
 
-      - name: Отправка изменений
+      - name: ✅ Отправка изменений
         run: |
           git push
