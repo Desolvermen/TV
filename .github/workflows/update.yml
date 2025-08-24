@@ -23,10 +23,10 @@ jobs:
 
       - name: ✅ Запуск скрипта и отображение времени
         run: |
-          update_time=$(date -u -d '+3 hours' '+%d-%m-%Y %H:%M:%S')
-          echo "Обновление выполнено: $update_time"
-          python new.py
-
+          python script.py  
+          update_time=$(date -u -d '+3 hours' '+%d-%m-%Y %H:%M:%S')  
+          echo "Обновление выполнено: $update_time"  
+          
       - name: ✅ Добавление изменений
         run: |
           if [ -n "$(git status --porcelain)" ]; then
