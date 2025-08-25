@@ -9,4 +9,7 @@
 ![1](https://github.com/user-attachments/assets/bed254f9-75b0-4ba6-9db6-84a2d9bdcc5b)
 ![1](https://github.com/user-attachments/assets/bed254f9-75b0-4ba6-9db6-84a2d9bdcc5b)  
 
-[![✅ Update IPTV Playlist](https://github.com/Desolvermen/IPTV_Playlist/actions/workflows/update.yml/badge.svg)](https://github.com/Desolvermen/IPTV_Playlist/actions/workflows/update.yml)
+[![✅ Update IPTV Playlist](https://github.com/Desolvermen/IPTV_Playlist/actions/workflows/update.yml/badge.svg)](https://github.com/Desolvermen/IPTV_Playlist/actions/workflows/update.yml)  
+
+
+[![✅ Update IPTV Playlist](https://github.com/Desolvermen/TV/actions/workflows/update.yml/badge.svg?event=status)](https://github.com/Desolvermen/TV/actions/workflows/update.yml)  
