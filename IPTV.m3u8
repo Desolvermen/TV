@@ -1,22 +1,22 @@
 #EXTM3U
 #EXTINF:-1,Соловьёв Live HD
-https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=VQCOdFTSckzUD_fvxTi16A&e=1756567825&scheme=https
+https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=IU9swbys2IhJYmAAfzozaA&e=1756585912&scheme=https
 #EXTINF:-1,Первый канал HD
-https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=h6Nj0jE2j2CtXxt75ZZanQ&e=1756537011&scheme=https
+https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=z9rPtlJTO-xxfFt7z9GKeg&e=1756580036&scheme=https
 #EXTINF:-1,Россия 1 HD
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8
 #EXTINF:-1,НТВ HD
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=HqdFMd7QTWAsQBMHLlgEsg&e=1756537011&scheme=https
+https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=OEDQdObRBEwnS26AxO7MFg&e=1756580036&scheme=https
 #EXTINF:-1,ТНТ HD
-https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=fj8W0X8f2eJuzpNYqQNmLQ&e=1756537012&scheme=https
+https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=tjhIypQrOiFTNnLsDByQkA&e=1756580037&scheme=https
 #EXTINF:-1,ТНТ-4 HD
-https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=t8JijrIZwBBh5A0obX9cZw&e=1756537014&scheme=https
+https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=WwoaW01t8fSz5DNazC49iA&e=1756580038&scheme=https
 #EXTINF:-1,СТС HD
 http://03.stream.pg19.ru/tv/channel/110/index.m3u8?source=pgtv
 #EXTINF:-1,Пятница! HD
-https://bl.rutube.ru/livestream/9f87a9a0cecbe773be6fddcbd93585ac/index.m3u8?s=i6TUxtmP3erf7J6xSxhehw&e=1756537014&scheme=https
+https://bl.rutube.ru/livestream/9f87a9a0cecbe773be6fddcbd93585ac/index.m3u8?s=k9Q3J3Y1kD4Xgxv4qPg8-w&e=1756580039&scheme=https
 #EXTINF:-1,ТВ-3 HD
-https://bl.rutube.ru/livestream/7bf12d9c050f9a7ef3728db5730432ae/index.m3u8?s=H9Kx-YIZ0z7vh9bDNlqdaA&e=1756537016&scheme=https
+https://bl.rutube.ru/livestream/7bf12d9c050f9a7ef3728db5730432ae/index.m3u8?s=Y-j6R54VJQWOVy6x19N6_w&e=1756580040&scheme=https
 #EXTINF:-1,Звезда HD
 http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
 #EXTINF:-1,Звезда Плюс HD
@@ -25,5 +25,7 @@ http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/mono.ts.m3u8
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
+#EXTINF:-1,РБК HD
+https://bl.rutube.ru/livestream/07a0b9933eae9832f778dc9dbd38c1d5/index.m3u8?s=wCiHLY7GDBrKa32WLkBlqg&e=1756585913&scheme=https
 #EXTINF:-1,Матч ТВ HD
-https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=Uo6BPUsmdLh1aJ7VFZZAPw&e=1756537368&scheme=https
+https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=qXoqPf_B7fNQF16SPq5BsA&e=1756580105&scheme=https
