@@ -13,26 +13,28 @@ wanted_channels = [
     "ТНТ4 HD",
     "Пятница HD",
     "ТВ3 HD",
-    "РБК",
     "Матч ТВ HD",
-    "МузТВ"
+    "РБК HD"  # Добавьте РБК HD в список желаемых каналов
 ]
 
 # Функция для получения HLS ссылки из API Rutube
+
 def get_rutube_hls_url(api_url):
     response = requests.get(api_url)
     if response.status_code == 200:
         data = response.json()
-        # Извлекаем URL HLS из ответа
         return data['live_streams']['hls'][0]['url'] if 'live_streams' in data and 'hls' in data['live_streams'] else None
     else:
         print('Ошибка при запросе к API Rutube:', response.status_code)
         return None
 
-# URL API для получения HLS ссылки
-rutube_api_url = 'https://rutube.ru/api/play/options/c9b87c0b00cfff9b37f95b9c8e4eed42/'
-# Получаем HLS ссылку
-soloviev_hls_url = get_rutube_hls_url(rutube_api_url)
+# Получаем HLS ссылку для Соловьёв Live HD
+soloviev_api_url = 'https://rutube.ru/api/play/options/c9b87c0b00cfff9b37f95b9c8e4eed42/'
+soloviev_hls_url = get_rutube_hls_url(soloviev_api_url)
+
+# Получаем HLS ссылку для РБК HD
+rbk_api_url = 'https://rutube.ru/api/play/options/07a0b9933eae9832f778dc9dbd38c1d5/'
+rbk_hls_url = get_rutube_hls_url(rbk_api_url)
 
 # Загружаем плейлист
 response = requests.get(playlist_url)
@@ -48,9 +50,8 @@ filtered_lines = []
 # Добавляем заголовок M3U
 filtered_lines.append('#EXTM3U')
 
-# Проверяем, получена ли HLS ссылка
+# Добавляем канал Соловьёв Live HD с динамической HLS ссылкой
 if soloviev_hls_url:
-    # Добавляем канал Соловьёв Live HD с динамической HLS ссылкой
     filtered_lines.append('#EXTINF:-1,Соловьёв Live HD')
     filtered_lines.append(soloviev_hls_url)
 else:
@@ -70,12 +71,8 @@ for channel in wanted_channels:
                 elif channel_name == "Пятница HD":
                     channel_name = "Пятница! HD"
                 elif channel_name == "ТВ3 HD":
-                    channel_name = "ТВ-3 HD"
-                elif channel_name == "РБК":
-                    channel_name = "РБК HD"
-                elif channel_name == "МузТВ":
-                    channel_name = "Муз ТВ HD"
-
+                    channel_name = "ТВ-3 HD"  
+              
                 filtered_lines.append(f'#EXTINF:-1,{channel_name}')  # Добавляем название канала
                 while index + 1 < len(playlist_content):
                     index += 1  # Перемещаемся к следующей строке
@@ -84,16 +81,15 @@ for channel in wanted_channels:
                         filtered_lines.append(next_line)  # Добавляем URL-адрес потока
                     else:
                         break  # Прерываем цикл на комментарии
+
+                # Добавляем статичные каналы
                 if channel == "Первый канал HD":
-                    # Добавляем канал Россия 1 HD после Первый канал HD
                     filtered_lines.append('#EXTINF:-1,Россия 1 HD')
                     filtered_lines.append('https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8')  
                 if channel == "ТНТ4 HD":
-                    # Добавляем статичное СТС HD после ТНТ4 HD
                     filtered_lines.append('#EXTINF:-1,СТС HD')
                     filtered_lines.append('http://03.stream.pg19.ru/tv/channel/110/index.m3u8?source=pgtv')
                 if channel == "ТВ3 HD":
-                    # Добавляем статичное Звезда HD после ТВ3 HD
                     filtered_lines.append('#EXTINF:-1,Звезда HD')
                     filtered_lines.append('http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8')
                     filtered_lines.append('#EXTINF:-1,Звезда Плюс HD')
@@ -102,6 +98,11 @@ for channel in wanted_channels:
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8')
                     filtered_lines.append('#EXTINF:-1,Мир 24 HD')
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8')
+                    
+                    # Добавляем РБК HD сразу после Мир 24 HD
+                    if rbk_hls_url:
+                        filtered_lines.append('#EXTINF:-1,РБК HD')
+                        filtered_lines.append(rbk_hls_url)
                 break  # Выйти из внешнего цикла после добавления канала
 
 # Запись отфильтрованного плейлиста в файл с учетом кодировки
