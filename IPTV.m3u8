@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1,Соловьёв Live HD
-https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=IU9swbys2IhJYmAAfzozaA&e=1756585912&scheme=https
 #EXTINF:-1,Первый канал HD
 https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=z9rPtlJTO-xxfFt7z9GKeg&e=1756580036&scheme=https
 #EXTINF:-1,Россия 1 HD
@@ -26,6 +24,6 @@ http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,РБК HD
-https://bl.rutube.ru/livestream/07a0b9933eae9832f778dc9dbd38c1d5/index.m3u8?s=wCiHLY7GDBrKa32WLkBlqg&e=1756585913&scheme=https
+https://bl.rutube.ru/livestream/07a0b9933eae9832f778dc9dbd38c1d5/index.m3u8?s=9WgMsI0Up0V7j3yE7M-v_w&e=1756609525&scheme=https
 #EXTINF:-1,Матч ТВ HD
 https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=qXoqPf_B7fNQF16SPq5BsA&e=1756580105&scheme=https
