@@ -23,7 +23,5 @@ http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/mono.ts.m3u8
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
-#EXTINF:-1,РБК HD
-https://bl.rutube.ru/livestream/07a0b9933eae9832f778dc9dbd38c1d5/index.m3u8?s=R_FD13Sz69hlUWM9a6TvQw&e=1756636381&scheme=https
 #EXTINF:-1,Матч ТВ HD
 https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=PcdcJ1nS7WYyYbdOoKunEQ&e=1756623623&scheme=https
