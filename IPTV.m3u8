@@ -1,20 +1,20 @@
 #EXTM3U
 #EXTINF:-1,Первый канал HD
-https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=xNpfmGqdWDJwBnZXpfBCRA&e=1756666394&scheme=https
+https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=oaKWQRxNoBPWtErJo9s2SQ&e=1756711674&scheme=https
 #EXTINF:-1,Россия 1 HD
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8
 #EXTINF:-1,НТВ HD
-https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=K8h7I7gkE9EKW2g7acVfCw&e=1756666395&scheme=https
+https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=i_IOnyfCyQKraidI5ywYDg&e=1756711675&scheme=https
 #EXTINF:-1,ТНТ HD
-https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=httG_m1V3K4KCvFyRO2TJQ&e=1756666396&scheme=https
+https://bl.rutube.ru/livestream/546602986e6a424d74d594876ddb3f04/index.m3u8?s=enF8EMLcNTkep60eoSytQQ&e=1756711675&scheme=https
 #EXTINF:-1,ТНТ-4 HD
-https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=SuQTe25z_n6zmaMPLjb4Pg&e=1756666397&scheme=https
+https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=1GN4ncWGK916ub28LeCkKA&e=1756711676&scheme=https
 #EXTINF:-1,СТС HD
 http://03.stream.pg19.ru/tv/channel/110/index.m3u8?source=pgtv
 #EXTINF:-1,Пятница! HD
-https://bl.rutube.ru/livestream/9f87a9a0cecbe773be6fddcbd93585ac/index.m3u8?s=3WlwtzVH32ANf1zqmw-UeA&e=1756666397&scheme=https
+https://bl.rutube.ru/livestream/9f87a9a0cecbe773be6fddcbd93585ac/index.m3u8?s=PvO0CJGXVtiRMCPo2aoy2A&e=1756711677&scheme=https
 #EXTINF:-1,ТВ-3 HD
-https://bl.rutube.ru/livestream/7bf12d9c050f9a7ef3728db5730432ae/index.m3u8?s=9mK5FEzXkFnUDtSEzV10jQ&e=1756666398&scheme=https
+https://bl.rutube.ru/livestream/7bf12d9c050f9a7ef3728db5730432ae/index.m3u8?s=jgz98sQc_IGxKbEBuytHjQ&e=1756711678&scheme=https
 #EXTINF:-1,Звезда HD
 http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
 #EXTINF:-1,Звезда Плюс HD
@@ -24,4 +24,4 @@ http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Матч ТВ HD
-https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=npOtVscc6tG0U481EYCMMA&e=1756666470&scheme=https
+https://bl.rutube.ru/livestream/11bbbec75a2ceb8cf446ad16813c6eec/index.m3u8?s=WGtL72w8sij7lHgT2jpJLw&e=1756711724&scheme=https
