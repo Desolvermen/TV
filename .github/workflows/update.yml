@@ -23,8 +23,8 @@ jobs:
 
       - name: ✅ Запуск скрипта и отображение времени
         run: |
-          python script.py  
-          update_time=$(date -u -d '+3 hours' '+%d-%m-%Y %H:%M:%S')  
+          python script.py
+          update_time=$(date -u '+%d-%m-%Y %H:%M:%S')
           echo "Обновление выполнено: $update_time"  
           
       - name: ✅ Добавление изменений
