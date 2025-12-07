@@ -1,0 +1,39 @@
+#EXTM3U
+#EXTINF:-1,Соловьёв Live HD
+https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=Acwhcn2XvJZdp9sM7dJGMw&e=1765228573&scheme=https
+#EXTINF:-1,Первый канал HD
+https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=EsmebO1E2EoW2TpFsUaheQ&e=1765223619&scheme=https
+#EXTINF:-1,Россия 1 HD
+https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/1080p.m3u8
+#EXTINF:-1,НТВ HD
+https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?s=DpBHqj1Q08XNE6Gm9QqZdA&e=1765223620&scheme=https
+#EXTINF:-1,ТНТ HD
+https://bl.rutube.ru/livestream/f02b63bc8f0ed4dba04bbfce4a1119c5/index.m3u8?s=_D0UG4-3w0ifywN9ncpx6g&e=1765223622&scheme=https
+#EXTINF:-1,ТНТ-4 HD
+https://bl.rutube.ru/livestream/c801a7087e29a097192d74c270fbc6c1/index.m3u8?s=Uzo8FIMlix9f3jJwSHB2lg&e=1765223625&scheme=https
+#EXTINF:-1,СТС HD
+http://03.stream.pg19.ru/tv/channel/110/index.m3u8?source=pgtv
+#EXTINF:-1,Пятница! HD
+https://bl.rutube.ru/livestream/d90aa86cc5b1d4a7b310c85debcee474/index.m3u8?s=gRHXW5E44jN5TUdSMuD59w&e=1765223626&scheme=https
+#EXTINF:-1,ТВ-3 HD
+https://bl.rutube.ru/livestream/ff99b4d6cc81635fdcd094af044d8d96/index.m3u8?s=tWBHFF0Sx9g12_16wHbpYg&e=1765223628&scheme=https
+#EXTINF:-1,Звезда HD
+http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdhigh.m3u8
+#EXTINF:-1,Звезда Плюс HD
+http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/mono.ts.m3u8
+#EXTINF:-1,Мир HD
+http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
+#EXTINF:-1,Мир 24 HD
+http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
+#EXTINF:-1,Iнтер HD
+http://193.124.254.4:7034/110.m3u8
+#EXTINF:-1,5 канал HD
+https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8
+#EXTINF:-1,24 канал HD
+https://ext.cdn.nashnet.tv/228.0.0.33/index.m3u8
+#EXTINF:-1,Прямий HD
+https://ext.cdn.nashnet.tv/228.0.0.122/index.m3u8
+#EXTINF:-1,Еспресо TV HD
+https://ext.cdn.nashnet.tv/228.0.0.191/index.m3u8
+#EXTINF:-1,Київ ТБ HD
+https://ext.cdn.nashnet.tv/228.0.0.15/index.m3u8
