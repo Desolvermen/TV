@@ -12,10 +12,8 @@ wanted_channels = [
     "ТНТ HD",
     "ТНТ4 HD",
     "Пятница HD",
-    "ТВ3 HD",
-    "Матч ТВ HD",
-    "РБК HD"  # Добавьте РБК HD в список желаемых каналов
-]
+    "ТВ3 HD"
+  ]
 
 # Функция для получения HLS ссылки из API Rutube
 
@@ -31,10 +29,6 @@ def get_rutube_hls_url(api_url):
 # Получаем HLS ссылку для Соловьёв Live HD
 soloviev_api_url = 'https://rutube.ru/api/play/options/c9b87c0b00cfff9b37f95b9c8e4eed42/'
 soloviev_hls_url = get_rutube_hls_url(soloviev_api_url)
-
-# Получаем HLS ссылку для РБК HD
-rbk_api_url = 'https://rutube.ru/api/play/options/07a0b9933eae9832f778dc9dbd38c1d5/'
-rbk_hls_url = get_rutube_hls_url(rbk_api_url)
 
 # Загружаем плейлист
 response = requests.get(playlist_url)
@@ -98,11 +92,20 @@ for channel in wanted_channels:
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8')
                     filtered_lines.append('#EXTINF:-1,Мир 24 HD')
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8')
-                    
-                    # Добавляем РБК HD сразу после Мир 24 HD
-                    if rbk_hls_url:
-                        filtered_lines.append('#EXTINF:-1,РБК HD')
-                        filtered_lines.append(rbk_hls_url)
+                    filtered_lines.append('#EXTINF:-1,Iнтер HD')
+                    filtered_lines.append('http://193.124.254.4:7034/110.m3u8')
+                    filtered_lines.append('#EXTINF:-1,5 канал HD')
+                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8')
+                    filtered_lines.append('#EXTINF:-1,24 канал HD')
+                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.33/index.m3u8')
+                    filtered_lines.append('#EXTINF:-1,Прямий HD')
+                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.122/index.m3u8')
+                    filtered_lines.append('#EXTINF:-1,Еспресо TV HD')
+                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.191/index.m3u8')
+                    filtered_lines.append('#EXTINF:-1,Київ ТБ HD')
+                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.15/index.m3u8')
+
+                
                 break  # Выйти из внешнего цикла после добавления канала
 
 # Запись отфильтрованного плейлиста в файл с учетом кодировки
@@ -111,3 +114,4 @@ with open(output_file, 'w', encoding='utf-8') as file:
         file.write(f"{line}\n")
 
 print(f'Создан плейлист: {output_file}')
+
