@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1,Соловьёв Live HD
-https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=eRt4Wa_3E01tFnabKwq3MA&e=1765272493&scheme=https
+https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=VWfPTQWQhM6R6oA6LFzDww&e=2065197717&scheme=https
 #EXTINF:-1,Первый канал HD
 https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=2GNNfEtnrD1svc4cffXUGw&e=1765266624&scheme=https
 #EXTINF:-1,Россия 1 HD
@@ -25,7 +25,7 @@ http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/mono.ts.m3u8
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
-#EXTINF:-1,Iнтер HD
+#EXTINF:-1 group-title="Украина",Iнтер HD
 http://193.124.254.4:7034/110.m3u8
 #EXTINF:-1,5 канал HD
 https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8
