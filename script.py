@@ -99,15 +99,15 @@ for channel in wanted_channels:
                     filtered_lines.append('#EXTINF:-1,Freedom HD')
                     filtered_lines.append('http://141.8.193.88:7034/91.m3u8')
                     filtered_lines.append('#EXTINF:-1,5 канал HD')
-                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8')
+                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/2118742539.m3u8')
                     filtered_lines.append('#EXTINF:-1,24 канал HD')
-                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.33/index.m3u8')
+                    filtered_lines.append('http://streamvideol1.luxnet.ua/news24/livenews_1080p/index.m3u8')
                     filtered_lines.append('#EXTINF:-1,Прямий HD')
-                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.122/index.m3u8')
+                    filtered_lines.append('http://141.8.193.88:7034/3615.m3u8')
                     filtered_lines.append('#EXTINF:-1,Еспресо TV HD')
-                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.191/index.m3u8')
+                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/2118742594.m3u8')
                     filtered_lines.append('#EXTINF:-1,Київ ТБ HD')
-                    filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.0.15/index.m3u8')
+                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/1293296300.m3u8')
 
                 
                 break  # Выйти из внешнего цикла после добавления канала
@@ -118,6 +118,7 @@ with open(output_file, 'w', encoding='utf-8') as file:
         file.write(f"{line}\n")
 
 print(f'Создан плейлист: {output_file}')
+
 
 
 
