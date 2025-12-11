@@ -93,7 +93,11 @@ for channel in wanted_channels:
                     filtered_lines.append('#EXTINF:-1,Мир 24 HD')
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8')
                     filtered_lines.append('#EXTINF:-1 group-title="Украина",Iнтер HD')
-                    filtered_lines.append('http://193.124.254.4:7034/110.m3u8')
+                    filtered_lines.append('http://141.8.193.88:7034/110.m3u8')
+                    filtered_lines.append('#EXTINF:-1,1+1 HD')
+                    filtered_lines.append('http://141.8.193.88:7034/124.m3u8')
+                    filtered_lines.append('#EXTINF:-1,Freedom HD')
+                    filtered_lines.append('http://141.8.193.88:7034/91.m3u8')
                     filtered_lines.append('#EXTINF:-1,5 канал HD')
                     filtered_lines.append('https://ext.cdn.nashnet.tv/228.0.4.26/index.m3u8')
                     filtered_lines.append('#EXTINF:-1,24 канал HD')
@@ -114,5 +118,6 @@ with open(output_file, 'w', encoding='utf-8') as file:
         file.write(f"{line}\n")
 
 print(f'Создан плейлист: {output_file}')
+
 
 
