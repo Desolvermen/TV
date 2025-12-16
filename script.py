@@ -92,24 +92,7 @@ for channel in wanted_channels:
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8')
                     filtered_lines.append('#EXTINF:-1,Мир 24 HD')
                     filtered_lines.append('http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8')
-                    filtered_lines.append('#EXTINF:-1 group-title="Украина",Iнтер HD')
-                    filtered_lines.append('http://141.8.193.88:7034/110.m3u8')
-                    filtered_lines.append('#EXTINF:-1,1+1 HD')
-                    filtered_lines.append('http://141.8.193.88:7034/124.m3u8')
-                    filtered_lines.append('#EXTINF:-1,Freedom HD')
-                    filtered_lines.append('http://141.8.193.88:7034/91.m3u8')
-                    filtered_lines.append('#EXTINF:-1,5 канал HD')
-                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/2118742539.m3u8')
-                    filtered_lines.append('#EXTINF:-1,24 канал HD')
-                    filtered_lines.append('http://streamvideol1.luxnet.ua/news24/livenews_1080p/index.m3u8')
-                    filtered_lines.append('#EXTINF:-1,Прямий HD')
-                    filtered_lines.append('http://141.8.193.88:7034/3615.m3u8')
-                    filtered_lines.append('#EXTINF:-1,Еспресо TV HD')
-                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/2118742594.m3u8')
-                    filtered_lines.append('#EXTINF:-1,Київ ТБ HD')
-                    filtered_lines.append('http://api-tv.ipnet.ua/api/v1/manifest/1293296300.m3u8')
-
-                
+                    
                 break  # Выйти из внешнего цикла после добавления канала
 
 # Запись отфильтрованного плейлиста в файл с учетом кодировки
@@ -118,6 +101,7 @@ with open(output_file, 'w', encoding='utf-8') as file:
         file.write(f"{line}\n")
 
 print(f'Создан плейлист: {output_file}')
+
 
 
 
