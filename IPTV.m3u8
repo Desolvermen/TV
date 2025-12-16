@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1,Соловьёв Live HD
-https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=5ypBQJo-ED0abIMTC8vfXw&e=2065877173&scheme=https
+https://bl.rutube.ru/livestream/c9b87c0b00cfff9b37f95b9c8e4eed42/index.m3u8?s=4Wy5TK_lpB6BgNxsP6I-Eg&e=2065909784&scheme=https
 #EXTINF:-1,Первый канал HD
 https://bl.rutube.ru/livestream/c58f502c7bb34a8fcdd976b221fca292/index.m3u8?s=UfohTE7Tju3a_981LZZA8Q&e=2065868632&scheme=https
 #EXTINF:-1,Россия 1 HD
@@ -25,19 +25,3 @@ http://tvzvezda.bonus-tv.ru/cdn/zvezdaplus/mono.ts.m3u8
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/tracks-v1a1/mono.m3u8
 #EXTINF:-1,Мир 24 HD
 http://hls-mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Украина",Iнтер HD
-http://141.8.193.88:7034/110.m3u8
-#EXTINF:-1,1+1 HD
-http://141.8.193.88:7034/124.m3u8
-#EXTINF:-1,Freedom HD
-http://141.8.193.88:7034/91.m3u8
-#EXTINF:-1,5 канал HD
-http://api-tv.ipnet.ua/api/v1/manifest/2118742539.m3u8
-#EXTINF:-1,24 канал HD
-http://streamvideol1.luxnet.ua/news24/livenews_1080p/index.m3u8
-#EXTINF:-1,Прямий HD
-http://141.8.193.88:7034/3615.m3u8
-#EXTINF:-1,Еспресо TV HD
-http://api-tv.ipnet.ua/api/v1/manifest/2118742594.m3u8
-#EXTINF:-1,Київ ТБ HD
-http://api-tv.ipnet.ua/api/v1/manifest/1293296300.m3u8
