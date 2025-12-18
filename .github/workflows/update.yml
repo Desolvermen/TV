@@ -2,7 +2,7 @@ name: ✅ Update IPTV Playlist
 
 on:
   schedule:
-    - cron: '0 */9 * * *'  # Каждые 9 часов
+    - cron: '0 */1 * * *'  # Каждый час
 
 jobs:
   build:
