@@ -12,7 +12,6 @@ wanted_channels = [
     "ТНТ HD",
     "ТНТ4 HD",
     "Пятница HD",
-    "РБК",
     "ОТР",
     "ТВ3 HD",
     "Матч ТВ HD"
@@ -67,8 +66,6 @@ for channel in wanted_channels:
                     channel_name = "ТНТ-4 HD"
                 elif channel_name == "Пятница HD":
                     channel_name = "Пятница! HD"
-                elif channel_name == "РБК":
-                    channel_name = "РБК HD"
                 elif channel_name == "ОТР":
                     channel_name = "ОТР HD"
                 elif channel_name == "ТВ3 HD":
@@ -108,6 +105,7 @@ with open(output_file, 'w', encoding='utf-8') as file:
         file.write(f"{line}\n")
 
 print(f'Создан плейлист: {output_file}')
+
 
 
 
